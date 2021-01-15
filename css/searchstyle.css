@@ -1,0 +1,127 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background:rgb(22, 16, 0);
+    background-attachment: fixed;
+    background-position: center;
+}
+.header{
+    background: rgba(8, 6, 0, 0.89);
+    padding: 6px 24px;
+    text-align: left;
+    color: white;
+    margin: 0px;
+    letter-spacing: 1px;
+    font: caption;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+.menu{
+    position: static;
+    top: 0px;
+    background-color:rgb(0, 0, 0);
+    margin: 0px;
+    overflow: hidden;
+}
+.menu a{
+    font: menu;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 24px;
+}
+.menu a:hover{
+    background: rgba(46, 39, 0, 0.9);
+    color: white;
+}
+.txt{
+    font: menu;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+}
+.box{
+    background: rgba(8, 7, 0, 0.89);
+    padding: 6px 24px;
+    text-align: left;
+    color: white;
+    margin: 0px;
+    letter-spacing: 1px;
+    font: caption;
+    font-size: 24px;
+    text-transform: uppercase;    
+}
+main{
+    vertical-align: auto;
+    width: 80%;
+    height: 100vs;
+    background: rgba(8, 6, 0, 0);
+    padding: 6px 24px;
+    text-align: left;
+    color: whitve;
+    margin: 0px;
+    letter-spacing: 1px;
+    font: caption;
+    font-size: 24px;
+    text-transform: uppercase;    
+}
+.button{
+    padding: 10px;
+    float: left;
+    margin: 1em;
+    width: 137px;
+    height: 60px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    color: white;
+    background: rgba(8, 7, 0, 0.89);
+    font: caption;
+}
+
+.container{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(44, 36, 0);
+    width: 30%;
+    position: absolute;
+    left: 34%;
+    text-align:center;
+    box-shadow: 0 6px 8px rgba(0,0,0,.1);
+    transition: all .4s;
+}
+.container h1{
+    text-decoration: solid;
+    font: caption;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #836f00;
+}
+.container input{
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    width: calc(100% - 30px);
+    font-size: 18px;
+}
+.container ul li{
+    font: caption;
+    list-style-type: none;
+    padding: 15px 10px;
+    background-color: #0f0c00;
+    transition: .4s;
+}
+.container ul a{
+    font: caption;
+    color: #ffd900;
+    text-decoration: none;
+    
+}
