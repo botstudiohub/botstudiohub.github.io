@@ -2,51 +2,52 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-image: radial-gradient(rgb(0, 7, 70), rgb(39, 0, 83));
+    background-color: rgba(238, 238, 238, 0.89);
     background-position: center;
-}
-.header{
-    background: rgba(18, 0, 31, 0.486);
-    padding: 6px 24px;
-    text-align: left;
-    color: white;
-    margin: 0px;
-    letter-spacing: 1px;
-    font: menu;
-    font-size: 24px;
-    font-weight:100;
-
 }
 .menu{
     position: sticky;
     top: 0px;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(0, 17, 255);
     margin: 0px;
     overflow: hidden;
 }
 .menu a{
     font: Menu;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
     box-sizing: border-box;
-    display: inline-block;
+    color: skyblue;
+    text-align: center;
+    padding: 24px 24px;
+    font-weight:100;
+    float: right;
+}
+.menu h2{
+    font: Menu;
+    text-decoration: none;
+    font-size: 23px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
     color: white;
     text-align: center;
-    padding: 16px 24px;
-    font-weight:100;
+    padding: 0px 24px;
+    font-weight:150;
+    float: left;
 }
 .menu a:hover{
-    background: rgba(56, 0, 78, 0.37);
+    color: gainsboro;
+}
+.selected{
     color: white;
 }
 .txt{
-    -webkit-text-stroke: 1px black;
     font: Menu;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 1px;
-    color: white;
+    color: rgb(139, 139, 139);
     text-align: center;
     text-justify: auto;
     font-weight:100;
@@ -63,10 +64,21 @@ body{
     font-weight:200;
 }
 .box{
-    background: rgba(8, 7, 0, 0.89);
+    background: rgba(185, 185, 185, 0.89);
     padding: 6px 24px;
     text-align: left;
     color: white;
+    margin: 0px;
+    letter-spacing: 1px;
+    font: caption;
+    font-size: 24px;
+    text-transform: uppercase;    
+}
+.box2{
+    background: rgba(224, 224, 224, 0.89);
+    padding: 6px 24px;
+    text-align: left;
+    color: rgb(255, 255, 255);
     margin: 0px;
     letter-spacing: 1px;
     font: caption;
@@ -88,47 +100,26 @@ main{
     text-transform: uppercase;    
 }
 .button{
-    padding: 10px;
-    float: left;
-    margin: 1em;
-    width: 137px;
-    height: 60px;
-    line-height: 50px;
-    font-size: 25px;
-    text-align: center;
-    text-shadow: 2px 2px black;
-    color: white;
-    background: rgba(8, 8, 0, 0.89);
-    font: caption;
-}
-
-.button_s{
+    border: thin;
+    border-color: #ffffff00;
+    border-style: solid;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
     padding: 10px;
     float: center;
-    margin: 1em;
-    width: 190px;
-    height: 60px;
-    line-height: 50px;
-    font-size: 25px;
-    text-align: center;
-    color: black;
-    background: rgba(255, 255, 255, 0.473);
-    font: caption;
-}
-
-.button_a{
-    padding: 10px;
-    float: center;
-    margin: 1em;
     width: 200px;
     height: 60px;
     line-height: 50px;
-    font-size: 25px;
+    font-size: 50px;
     text-align: center;
-    text-shadow: 2px 2px black;
     color: white;
-    background: rgba(8, 7, 0, 0.89);
+    background: rgb(0, 17, 255);
     font: caption;
+    border-radius: 50px;
 }
 
 .image{
@@ -148,5 +139,32 @@ main{
     text-justify: auto;
 }
 .frame1{
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
     outline: none;
+    border: thin;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+}
+.frame2{
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    outline: none;
+    border: thin;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
 }
