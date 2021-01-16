@@ -1,3 +1,4 @@
+
 body{
     padding: 0px;
     margin: 0px;
@@ -91,7 +92,7 @@ main{
     background: rgba(8, 8, 0, 0);
     padding: 6px 24px;
     text-align: left;
-    color: white;
+    color: whitve;
     margin: 0px;
     letter-spacing: 1px;
     font: caption;
@@ -151,6 +152,8 @@ main{
     border-style: solid;
     border-radius: 25px;
     border-width: 1px;
+    width: 80%;
+    height: 50%;
 }
 .frame2{
     background-color: rgba(255, 255, 255, 0.473);
@@ -166,4 +169,6 @@ main{
     border-style: solid;
     border-radius: 25px;
     border-width: 1px;
+    width: 80%;
+    height: 50%;
 }
