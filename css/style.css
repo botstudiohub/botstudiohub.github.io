@@ -159,7 +159,7 @@ main{
     background-color: rgba(255, 255, 255, 0.473);
     margin: 0;
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 50%;
     -ms-transform: translate(-50%, -70%);
     transform: translate(-50%, -70%);
