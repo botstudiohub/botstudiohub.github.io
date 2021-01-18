@@ -2,45 +2,41 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: rgba(238, 238, 238, 0.89);
+    background-image: url(http://sketchpunk.com/NEditorJS/bg_grid.png);
     background-position: center;
 }
 .menu{
+    width: auto;
     position: sticky;
     top: 0px;
-    background-color:rgb(0, 17, 255);
+    background-color: rgba(0, 0, 0, 0.575);
     margin: 0px;
     overflow: hidden;
 }
 .menu a{
+    background-color: rgba(0, 0, 0, 0.356);
     font: Menu;
     text-decoration: none;
     font-size: 17px;
     letter-spacing: 1px;
     box-sizing: border-box;
-    color: skyblue;
+    color: rgb(219, 219, 219);
     text-align: center;
-    padding: 24px 24px;
+    padding: 17px 24px;
     font-weight:100;
-    float: right;
-    transition: color 0.5s, font-size 0.5s;
-}
-.menu h2{
-    font: Menu;
-    text-decoration: none;
-    font-size: 23px;
-    letter-spacing: 1px;
-    box-sizing: border-box;
-    color: white;
-    text-align: center;
-    padding: 0px 24px;
-    font-weight:150;
     float: left;
-    transition: color 0.5s, padding 0.5s;
+    border-radius: 50px;
+    border-color: rgba(0, 47, 255, 0.123);
+    border-style: solid;
+    border-width: 2px;
+    transition: background-color 0.5s, top 0.5s, border-width 0.5s, border-color 0.5s, margin-left 0.5s, margin-top 0.5s, color 0.5s;
 }
 .menu a:hover{
-    color: gainsboro;
-    font-size: 25px;
+    border-color: rgba(0, 47, 255, 0.616);
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    background-color: rgb(71, 71, 71);
 }
 .selected{
     color: white;
@@ -48,9 +44,9 @@ body{
 .txt{
     font: Menu;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 21px;
     letter-spacing: 1px;
-    color: rgb(139, 139, 139);
+    color: rgb(255, 255, 255);
     text-align: center;
     text-justify: auto;
     font-weight:100;
@@ -77,16 +73,47 @@ body{
     font-size: 24px;
     text-transform: uppercase;    
 }
-.box2{
-    background: rgba(224, 224, 224, 0.89);
-    padding: 6px 24px;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin: 0px;
-    letter-spacing: 1px;
+.codeinput{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: gray;
+    border-style: solid;
+    border-radius: 25px;
+    float: right;
+    border-width: 1px;
     font: caption;
-    font-size: 24px;
-    text-transform: uppercase;    
+    color: rgb(0, 0, 0);
+    resize: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    transition: background-color 0.5s, top 0.5s, border-width 0.5s, border-color 0.5s, margin-left 0.5s, margin-top 0.5s;
+}
+.codeinput:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 47, 255, 0.486);
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+.codeput{
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-color: gray;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    font: caption;
+    color: rgb(0, 0, 0);
+    resize: none;
+    top: 20%;
+    left: 90%;
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
+}
+.items1{
+    margin: 40px;
+    display: inline-block;
+    background-color: rgba(151, 151, 151, 0.308);
 }
 main{
     vertical-align: auto;
@@ -103,32 +130,29 @@ main{
     text-transform: uppercase;    
 }
 .button{
+    float: right;
     border: thin;
-    border-color: #ffffff00;
+    border-color: #0004ff;
     border-style: solid;
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    -ms-transform: translate(-50%, -0%);
-    transform: translate(-50%, -0%);
+    margin: 5px;
     padding: 10px;
-    float: center;
-    width: 200px;
-    height: 60px;
+    width: 150px;
+    height: 40px;
     line-height: 50px;
     font-size: 50px;
     text-align: center;
-    color: white;
-    background: rgb(0, 17, 255);
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     font: caption;
-    border-radius: 50px;
-    transition: width 0.5s, top 0.5s;
+    border-radius: 5px 50px 50px 5px;
+    transition: color 0.3s, background 0.3s, width, 0.5s;
 }
 .button:hover{
-    top: 19%;
-    width: 180px;
+    width: 160px;
+    color: rgb(255, 255, 255);
+    background: #0004ff;
 }
+
 .image{
     border-radius: 50%;
 }

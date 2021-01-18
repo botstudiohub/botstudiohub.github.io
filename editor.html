@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head><title>BSH - Editor</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/editorstyle.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="mods.html">Mods</a>
+        <a href="index.html">Back</a>
+    </div>
+    <!--Script-->
+    <script src="editor.js"></script>
+        <!--/-->
+<div class="items1">
+<p class="txt">Insert Essentials</p>
+<div>
+    <button class="button" id="insertf" onclick="template(document.getElementById('insertf').innerHTML)">Template</button>
+</div>
+    <div>
+        <button class="button" id="insertf" onclick="field(document.getElementById('insertf').innerHTML)">Field</button>
+    </div>
+    <div>
+        <button class="button" id="insertf" onclick="neededfield(document.getElementById('insertf').innerHTML)">Needed Field</button>
+    </div>
+    <div>
+        <button class="button" id="insertf" onclick="dropdown(document.getElementById('insertf').innerHTML)">Dropdown</button>
+    </div>
+    <div>
+        <button class="button" id="insertf" onclick="breaks(document.getElementById('insertf').innerHTML)">Dropdown Breaks</button>
+    </div>
+    <div>
+        <button class="button" id="insertf" onclick="message(document.getElementById('insertf').innerHTML)">Send Message</button>
+    </div>
+</div>
+
+
+<iframe scrolling="no" class="codeinput" id="editor-iframe" src="data:text/html,
+  <pre id=&quot;editor&quot; style=&quot;height:100%&quot;></pre>
+  <script src=&quot;https://ajaxorg.github.io/ace-builds/src/ace.js&quot;></script>
+  <script>
+      var editor = ace.edit(&quot;editor&quot;);
+      editor.setTheme(&quot;ace/theme/twilight&quot;);
+      editor.session.setMode(&quot;ace/mode/javascript&quot;);
+  </script>
+  " width="80%" height="600px"></iframe>
+</body>
+</html>
