@@ -30,9 +30,9 @@
             
                 // Place your html to show inside of Discord Bot Studio when they select your mod.
                 html: function(data) {
-                    return '
-                    
-                    ';
+                    return `
+                          
+                          `;
                 },
             
                 // When the bot is first started, this code will be ran.
